@@ -1,0 +1,31 @@
+.about{
+    
+    
+    &:before{
+        display: block;
+        content: "";
+        clear: both;
+    }
+    
+    padding-top: 14rem;
+    text-align: center;
+    width: 100%;
+    
+
+    @include respond(phone) {
+         padding-top: 5rem;
+        } 
+    
+    &__paragraph{
+        max-width: 78rem;
+        padding-top: 2rem;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.4rem;
+        line-height: 2;
+        display: inline-block;
+        color: rgb(132,130,130);
+        
+    }
+    
+   
+}

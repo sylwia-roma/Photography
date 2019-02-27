@@ -1,0 +1,41 @@
+.contact{
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255,255,255, 0.85),
+        rgba(255,255,255,0.85)),
+        url(../../images/works_5.jpg);
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    height: 70rem;
+    padding-top: 8rem;
+    margin-bottom: 1rem;
+    
+}
+
+.form{
+    &__input{
+        width: 58rem;
+        height: 4rem;
+        margin: 2rem;
+        border: solid 0.1rem #d07c7c;
+        padding: 1rem;
+        
+        @include respond(phone) {
+            width: 80%;
+        }
+        
+        @include respond(tab-port) {
+            width: 80%;
+        }
+    }
+    
+    &__input-text{
+        height: 13.5rem;
+    }
+    
+    &__footer{
+        display: flex;
+        justify-content: center;
+    }
+}

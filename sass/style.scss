@@ -1,0 +1,20 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/base";
+@import "base/utilities";
+
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
+@import "layout/about";
+@import "layout/works";
+@import "layout/testimonial";
+@import "layout/contact";
+@import "layout/follow";
+@import "layout/video";
+
+@import "components/component";
+

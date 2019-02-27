@@ -1,0 +1,39 @@
+.testimonial{
+    text-align: center;
+    margin: 9rem auto;
+    
+}
+
+.carousel{
+    
+    display: flex;
+    justify-content: center;
+    
+    &-indicators .active{
+        
+    }
+    
+    &-indicators li{
+        
+    }
+    
+     
+    
+    
+    &-item{
+        font-family: 'Raleway';
+        color: #a3a1a1;
+        
+        p{
+            
+            font-size: 18px;
+            max-width: 56rem;
+        }
+        
+        .sign{
+            font-size: 14px;
+            padding-top: 1rem;
+        }
+    }
+}
+

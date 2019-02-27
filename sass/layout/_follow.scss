@@ -1,0 +1,87 @@
+.follow-me{
+    
+    margin-top: 13rem;
+    margin-bottom: 10rem;
+    text-align: center;
+     
+    
+    &__icon{
+        display:flex;
+		align-items: center;
+		justify-content: center;
+        
+        
+        
+    }
+    
+    
+
+    
+ .icon {
+  position: relative;
+  font-size: 5rem;
+  cursor: pointer;
+  margin: 15px 30px;
+  width: 7rem;
+  height: 7rem;
+  line-height: 5rem;
+padding-right: 1.5rem;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1;
+  color: #838181;
+     
+     @include respond(phone) {
+            margin: 7px 10px; 
+            font-size: 3.5rem;
+            line-height: 6rem;
+    }
+
+  
+}
+    
+    .icon:after {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  box-sizing: content-box;
+}
+    
+ .follow-me-effect   .icon:after {
+  top: -8px;
+  left: -8px;
+  padding: 8px;
+  box-shadow: 0 0 0 4px #e6b5b5;
+  transition: transform 0.2s, opacity 0.2s;
+  transform: scale(.8);
+  opacity: 0;
+}
+   
+    
+    follow-me-effect     .icon {
+  background: rgba(230, 181, 181, 0.1);
+  transition: background 0.2s, color 0.2s;
+}
+  .follow-me-effect     .icon:hover {
+  background: #e6b5b5;
+  color: white;
+      text-decoration: none;
+}
+        
+ .follow-me-effect      .icon:after {
+  transform: scale(1.2);
+}
+        
+ .follow-me-effect      .icon:hover:after {
+  transform: scale(1);
+  opacity: 1;
+}
+    
+}
+
+
+    
+
