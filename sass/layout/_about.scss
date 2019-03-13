@@ -1,6 +1,4 @@
 .about{
-    
-    
     &:before{
         display: block;
         content: "";
@@ -11,10 +9,9 @@
     text-align: center;
     width: 100%;
     
-
     @include respond(phone) {
-         padding-top: 5rem;
-        } 
+        padding-top: 5rem;
+    } 
     
     &__paragraph{
         max-width: 78rem;
@@ -24,8 +21,5 @@
         line-height: 2;
         display: inline-block;
         color: rgb(132,130,130);
-        
     }
-    
-   
 }

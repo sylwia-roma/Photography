@@ -1,6 +1,4 @@
 .hr { 
-    
-    
     &--white{
         background-color: white;
         width: 7.9rem;
@@ -9,51 +7,33 @@
     }
     
     &--orange{
-          background-color: #d07c7c;
-          width: 6%;
-          height: 3px;
-          margin-top: 2rem;
+        background-color: #d07c7c;
+        width: 6%;
+        height: 3px;
+        margin-top: 2rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .logo__main{
     font-family: 'Dancing Script', cursive;
     word-spacing: -0.4rem;;
-    
-    
 }
-
-
-
 
 .heading{
     
 &-primary{
-
     &--main{
-    font-size: 48px;
-    font-family: 'Playfair Display', serif;
-    padding-top: 5rem;
+        font-size: 48px;
+        font-family: 'Playfair Display', serif;
+        padding-top: 5rem;
     }
     
     &--sub{
         font-size: 1.6rem;
         font-family: 'Raleway', sans-serif;
-        
         padding-top: 3rem;
-        
-    } }   
+    } 
+}   
 
 &-secondary{
     text-transform: uppercase;
@@ -77,14 +57,9 @@
     font-family: 'Playfair Display', serif;
     font-weight: 100;
     color: #848282;
-    }}
-
-
+}}
 
 .paragraph{
-        
-    
-    
     &__works{
         margin: 0;
         font-family: 'Raleway', sans-serif; 
@@ -98,16 +73,16 @@
         padding-top: 2rem;
         color: #848282; 
         
-        &--bottom{
-           margin-right: 10rem; 
-           font-size: 1.4rem;
-           padding-top: 2rem;
-           color: #848282;
+    &--bottom{
+        margin-right: 10rem; 
+        font-size: 1.4rem;
+        padding-top: 2rem;
+        color: #848282;
             
-            @include respond(phone) {
+        @include respond(phone) {
             margin-right: 1rem;
         }
-        }
+    }
         
     }
     
@@ -119,7 +94,6 @@
         line-height: 2;
         display: inline-block;
         color: #848282; 
-        
     }
     
      &__footer{
@@ -128,7 +102,6 @@
         color: rgb(132,130,130);
         font-family: "Raleway";
         font-weight: 300;
-        
     }
 }
 
@@ -140,25 +113,20 @@
     
     
     &-works{
-       padding: 1.25rem 5.5rem !important; 
+        padding: 1.25rem 5.5rem !important; 
     }
     
     &-contact{
-       padding: 1.25rem 5rem !important; 
+        padding: 1.25rem 5rem !important; 
         
-            @include respond(phone) {
+        @include respond(phone) {
             padding: 0.01rem 3rem !important; 
-        
-        
-    }
-    
-    }}
+        }
+}}
 
 .hamburger{
-    
     display: none;
     float: right;
-    
     
     &__line{
         width: 5rem;
@@ -167,30 +135,28 @@
         display: block;
         margin-bottom: 1rem;
         transition: all 1s ease-in-out;
-        
     }
     
     @include respond(phone) {
-           display: block;
-            
-        }
+        display: block;
+    }
 }
     
 #hamburger.is-active .hamburger__line:nth-child(1){
-  opacity: 0;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  transform: translateX(-100%);
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
 }
 
 #hamburger.is-active .hamburger__line:nth-child(3){
-  opacity: 0;
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  -o-transform: translateX(100%);
-  transform: translateX(100%);
-    }
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
 
 
 

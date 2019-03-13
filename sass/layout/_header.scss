@@ -14,13 +14,11 @@
     &__text-box{
         margin-top: -12rem;
         text-align: center;
-        
     }
+
     &__logo--main{
         font-size: 3.3rem;
         margin: 0;
-        
-        
     }
     
     &__logo--sub{
@@ -28,17 +26,11 @@
         margin: 0;
     }
     
-    
-    
-   
-    
     &:after{
-    display: block;
-    content: "";
-    clear: both;
+        display: block;
+        content: "";
+        clear: both;
     }
-    
-    
     
     .flaticon-download{
         text-decoration: none;
@@ -46,8 +38,6 @@
         position: absolute;
         bottom: 7rem;
         margin: 0 -3rem;
-        
-        
     }
     
     .flaticon{

@@ -6964,7 +6964,8 @@ html {
   position: relative;
   padding: 1rem 0 1rem 0;
   border-bottom: 1px solid #ebebeb;
-  height: 6rem; }
+  height: 6rem;
+  display: block; }
   @media (max-width: 37.5em) {
     .nav {
       display: flex;
@@ -6978,6 +6979,7 @@ html {
       text-decoration: none; }
   .nav--wrapper {
     display: block;
+    float: right;
     margin-top: 1rem; }
     @media (max-width: 37.5em) {
       .nav--wrapper {
@@ -6990,11 +6992,18 @@ html {
         background: #fff;
         opacity: 0;
         transition: all 0.2s ease; } }
+  @media (min-width: 37.5em) and (max-width: 56.25em) {
+    .nav ul {
+      padding-left: 2.5rem; } }
   @media (max-width: 37.5em) {
     .nav ul {
       width: 100%;
       margin-top: 1rem;
       background: white; } }
+  @media (min-width: 37.5em) and (max-width: 56.25em) {
+    .nav ul li {
+      margin-right: 2.4rem;
+      border: solid 0.5px #838181; } }
   @media (max-width: 37.5em) {
     .nav ul li {
       display: block;
@@ -7380,8 +7389,7 @@ nav ul li {
     transition: transform 0.2s, opacity 0.2s;
     transform: scale(0.8);
     opacity: 0; }
-  .follow-me follow-me-effect .icon {
-    background: rgba(230, 181, 181, 0.1);
+  .follow-me .follow-me-effect .icon {
     transition: background 0.2s, color 0.2s; }
   .follow-me .follow-me-effect .icon:hover {
     background: #e6b5b5;
