@@ -3,4 +3,10 @@ html{
     padding: 2.5rem;
     color: #838383;
     scroll-behavior: smooth;
+    
+    
+    @include respond(phone) {
+        padding: .5rem;
+        
+    }
 }

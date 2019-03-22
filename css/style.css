@@ -6926,6 +6926,9 @@ html {
   padding: 2.5rem;
   color: #838383;
   scroll-behavior: smooth; }
+  @media (max-width: 37.5em) {
+    html {
+      padding: .5rem; } }
 
 .header {
   background: url(../images/header.jpg) no-repeat;
@@ -7158,7 +7161,7 @@ nav ul li {
     justify-content: center; }
     @media (max-width: 37.5em) {
       .works__container {
-        grid-template-columns: 37rem;
+        grid-template-columns: 33rem;
         grid-template-rows: repeat(6, 36.6rem);
         grid-gap: 2.5rem 2.5rem; } }
     @media (min-width: 37.5em) and (max-width: 56.25em) {
@@ -7408,7 +7411,7 @@ nav ul li {
     color: #838181; }
     @media (max-width: 37.5em) {
       .follow-me .icon {
-        margin: 7px 10px;
+        margin: 7px 0;
         font-size: 3.5rem;
         line-height: 6rem; } }
   .follow-me .icon:after {
