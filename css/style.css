@@ -7349,7 +7349,7 @@ nav ul li {
   width: 1.7rem; }
 
 .contact {
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(./../images/works_5.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(../images/works_5.jpg);
   background-size: cover;
   background-position: top;
   text-align: center;
@@ -7492,7 +7492,8 @@ nav ul li {
   font-family: 'Raleway', sans-serif;
   font-size: 1.6rem;
   font-weight: 100;
-  color: white; }
+  color: white;
+  width: 17rem; }
 
 .paragraph__form {
   font-size: 1.4rem;
