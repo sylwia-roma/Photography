@@ -70,8 +70,6 @@
                 }
                 
                 a{
-                    
-                    
                     @include respond(phone){
                         padding: 1rem 2rem;
                         opacity: 0;
@@ -82,8 +80,6 @@
                         transform: translateX(-20px);
                         transition: all 0.2s ease;
                     }
-                    
-                    
                 }
             }
         }
