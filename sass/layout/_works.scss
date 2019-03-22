@@ -38,11 +38,14 @@
   &__item{
     position: relative;
     overflow: hidden;
-        
-    &:hover{
-      background-color: rgba(0,0,0,0.6);
-    }
-        
+    transition: filter .5s ease-in-out;
+      -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+      filter: grayscale(0%); /* FF 35+ */    
+      
+      &:hover{
+         -webkit-filter: grayscale(50%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+          filter: grayscale(50%); /* FF 35+ */ 
+      }
     &-center{
       color: white;
       position: absolute;

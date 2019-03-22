@@ -6924,7 +6924,8 @@ a.text-dark:hover, a.text-dark:focus {
 html {
   font-size: 62.5%;
   padding: 2.5rem;
-  color: #838383; }
+  color: #838383;
+  scroll-behavior: smooth; }
 
 .header {
   background: url(../images/header.jpg) no-repeat;
@@ -7167,9 +7168,17 @@ nav ul li {
         grid-gap: 2.5rem 2.5rem; } }
   .works__item {
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%);
+    /* FF 35+ */ }
     .works__item:hover {
-      background-color: rgba(0, 0, 0, 0.6); }
+      -webkit-filter: grayscale(50%);
+      /* Ch 23+, Saf 6.0+, BB 10.0+ */
+      filter: grayscale(50%);
+      /* FF 35+ */ }
     .works__item-center {
       color: white;
       position: absolute;
@@ -7303,20 +7312,41 @@ nav ul li {
 
 .testimonial {
   text-align: center;
-  margin: 9rem auto; }
+  margin: 9rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .carousel {
-  display: flex;
-  justify-content: center; }
-  .carousel-item {
-    font-family: 'Raleway';
-    color: #a3a1a1; }
-    .carousel-item p {
-      font-size: 18px;
-      max-width: 56rem; }
-    .carousel-item .sign {
-      font-size: 14px;
-      padding-top: 1rem; }
+  height: 20rem;
+  max-width: 50rem;
+  padding-top: 5rem; }
+  @media (max-width: 37.5em) {
+    .carousel {
+      max-width: 30rem;
+      height: 25rem; } }
+  .carousel--item {
+    color: #a0a0a0;
+    font-family: Raleway;
+    font-weight: 300; }
+    .carousel--item .description {
+      font-size: 18px; }
+    .carousel--item .sign {
+      font-size: 14px; }
+
+.slick-dots li button {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border-radius: 100%;
+  border: none;
+  background-color: #d3d3d3;
+  text-indent: -9999px; }
+
+.slick-dots li.slick-active button {
+  background-color: #d07c7c;
+  height: 1.7rem;
+  width: 1.7rem; }
 
 .contact {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(../../images/works_5.jpg);
@@ -7497,14 +7527,16 @@ nav ul li {
   text-transform: uppercase;
   color: white;
   background-color: #d07c7c;
-  font-size: 16px !important; }
+  font-size: 16px !important;
+  box-sizing: inherit; }
   .btn-works {
     padding: 1.25rem 5.5rem !important; }
   .btn-contact {
     padding: 1.25rem 5rem !important; }
     @media (max-width: 37.5em) {
       .btn-contact {
-        padding: 0.01rem 3rem !important; } }
+        height: 5rem;
+        padding: 1.25rem 2rem !important; } }
 
 .hamburger {
   display: none;
