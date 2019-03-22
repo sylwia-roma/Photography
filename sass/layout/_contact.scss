@@ -36,5 +36,16 @@
     &__footer{
         display: flex;
         justify-content: center;
+        
+        @include respond(phone) {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        
+        @include respond(tab-port) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }

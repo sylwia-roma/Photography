@@ -7376,6 +7376,14 @@ nav ul li {
 .form__footer {
   display: flex;
   justify-content: center; }
+  @media (max-width: 37.5em) {
+    .form__footer {
+      flex-direction: column;
+      align-items: center; } }
+  @media (min-width: 37.5em) and (max-width: 56.25em) {
+    .form__footer {
+      flex-direction: column;
+      align-items: center; } }
 
 .follow-me {
   margin-top: 13rem;
@@ -7506,7 +7514,10 @@ nav ul li {
     color: #848282; }
     @media (max-width: 37.5em) {
       .paragraph__form--bottom {
-        margin-right: 1rem; } }
+        margin-right: 0; } }
+    @media (min-width: 37.5em) and (max-width: 56.25em) {
+      .paragraph__form--bottom {
+        margin-right: 0; } }
 
 .paragraph__about {
   max-width: 78rem;

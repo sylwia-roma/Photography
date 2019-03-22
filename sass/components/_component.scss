@@ -82,7 +82,11 @@
         color: #848282;
             
         @include respond(phone) {
-            margin-right: 1rem;
+            margin-right: 0;
+        }
+        
+        @include respond(tab-port) {
+            margin-right: 0;
         }
     }
         
