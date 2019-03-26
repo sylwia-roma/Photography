@@ -4,17 +4,19 @@
   text-align: center;
      
   &__icon{
-    display:flex;
-		align-items: center;
-		justify-content: center;
-  }
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+}
+}
     
 .icon {
   position: relative;
   font-size: 5rem;
   cursor: pointer;
   margin: 15px 30px;
-  width: 7rem;
+  width: 6rem;
   height: 7rem;
   line-height: 5rem;
   padding-right: 1.5rem;
@@ -22,13 +24,9 @@
   text-align: center;
   z-index: 1;
   color: #838181;
-     
-  @include respond(phone) {
-    margin: 7px 0; 
-    font-size: 3.5rem;
-    line-height: 6rem;
-  }
+  text-decoration: none;
 }
+
     
 .icon:after {
   position: absolute;
@@ -58,7 +56,7 @@
 .follow-me-effect .icon:hover {
   background: #e6b5b5;
   color: white;
-      text-decoration: none;
+  text-decoration: none;
 }
         
 .follow-me-effect .icon:after {
@@ -69,7 +67,7 @@
   transform: scale(1);
   opacity: 1;
 }
-}
+
 
 
     

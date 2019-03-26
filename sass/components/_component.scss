@@ -78,7 +78,6 @@
     &--bottom{
         margin-right: 10rem; 
         font-size: 1.4rem;
-        padding-top: 2rem;
         color: #848282;
             
         @include respond(phone) {
@@ -117,18 +116,20 @@
     background-color: #d07c7c;
     font-size: 16px !important;
     box-sizing: inherit;
-    
+    cursor: pointer;
     
     
     &-works{
-        padding: 1.25rem 5.5rem !important; 
+        padding: 1.25rem 5.5rem !important;
+        width: 11rem;
+        
     }
     
     &-contact{
         padding: 1.25rem 5rem !important; 
         
         @include respond(phone) {
-            height: 5rem;
+            
             padding: 1.25rem 2rem !important;
         }
 }}
